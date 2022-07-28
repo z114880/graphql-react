@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import NextLaunch from "./NextLaunch";
+import PastLaunch from "./PastLaunch";
+import './App.css'
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span className="title-launch">Past Launches:</span>
+      <PastLaunch />
+      <span style={{ display: 'block', marginTop: '30px' }} className="title-launch">Next Launches:</span>
+      <NextLaunch />
     </div>
   );
 }
